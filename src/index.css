@@ -1,6 +1,50 @@
 @import "tailwindcss";
 
 body {
+  font-family: 'Dancing Script', cursive;;
   background-image: urm('assets/photo-1586075010923-2dd4570fb338.jpg');
   background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.notebook-container {
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #d4a373;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.notebook-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 29px,
+    #e0e0e0 30px
+  );
+  pointer-events: none;
+}
+
+.input {
+  background: transparent;
+  border: 1px solid #8b5e3c;
+  border-radius: 5px;
+  padding: 8px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.1rem;;
 }
